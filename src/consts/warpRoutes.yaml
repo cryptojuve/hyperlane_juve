@@ -25,4 +25,3 @@
       connections: [ { token: 'ethereum|arbitrum|0xFE6857faD0b6ee3F5cF69f2E815aA1DA0c1C7cb6' } ]
     }
   ]
-options: {}
