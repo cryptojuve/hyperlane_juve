@@ -13,5 +13,5 @@ export const APP_DESCRIPTION = 'A DApp for Hyperlane Warp Route transfers';
 export const APP_URL = 'hyperlane-juve.vercel.app';
 export const BRAND_COLOR = Color.primary;
 export const BACKGROUND_COLOR = Color.primary;
-export const BACKGROUND_IMAGE = 'url(/backgrounds/main.jpg)';
+export const BACKGROUND_IMAGE = 'url(/backgrounds/main-stadio.jpg)';
 export const PROXY_DEPLOYED_URL = 'https://proxy.hyperlane.xyz';
