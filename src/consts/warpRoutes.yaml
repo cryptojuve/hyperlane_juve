@@ -2,26 +2,26 @@
 # These configs will be merged with the warp routes in the configured registry
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
-  tokens: [
-    {
-      chainName: 'arbitrum',
-      standard: TokenStandard.EvmHypCollateral,
-      decimals: 8,
-      symbol: 'WBTC',
-      name: 'Wrapped BTC',
-      addressOrDenom: '0xFE6857faD0b6ee3F5cF69f2E815aA1DA0c1C7cb6',
-      collateralAddress: '0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f',
-      #logoURI: '/logos/usdc.png',
-      connections: [ { token: 'ethereum|base|0x69877C9B6D234d0721986cCf86C05c1C56C2898B' } ]
+tokens: [  
+  {
+        chainName: arbitrum,
+        standard: EvmHypCollateral,
+        decimals: 8,
+        symbol: WBTC,
+        name: Wrapped BTC,
+        addressOrDenom: "0xFE6857faD0b6ee3F5cF69f2E815aA1DA0c1C7cb6",
+        collateralAddressOrDenom: "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+        connections: [ { token: 'ethereum|base|0x69877C9B6D234d0721986cCf86C05c1C56C2898B' } ]
     },
     {
-      chainName: 'base',
-      standard: TokenStandard.EvmHypSynthetic,
-      decimals: 8,
-      symbol: 'WBTC',
-      name: 'Wrapped BTC',
-      addressOrDenom: '0x69877C9B6D234d0721986cCf86C05c1C56C2898B',
-      #logoURI: '/logos/usdc.png',
-      connections: [ { token: 'ethereum|arbitrum|0xFE6857faD0b6ee3F5cF69f2E815aA1DA0c1C7cb6' } ]
+        chainName: base,
+        standard: EvmHypSynthetic,
+        decimals: 8,
+        symbol: WBTC,
+        name: Wrapped BTC,
+        addressOrDenom: "0x69877C9B6D234d0721986cCf86C05c1C56C2898B",
+        connections: [ { token:  'ethereum|arbitrum|0xFE6857faD0b6ee3F5cF69f2E815aA1DA0c1C7cb6' } ]
     }
-  ]
+]
+options: {}
+
