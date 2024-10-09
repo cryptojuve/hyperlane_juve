@@ -2,5 +2,31 @@
 # These configs will be merged with the warp routes in the configured registry
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
-tokens: []
+  tokens: [
+    {
+      chainName: 'arbitrum',
+      standard: TokenStandard.EvmHypCollateral,
+      decimals: 6,
+      symbol: 'USDC',
+      name: 'USD Coin',
+      // The router address
+      addressOrDenom: 'YOUR_ROUTER_ADDRESS_1',
+      // The address of the underlying collateral token
+      collateralAddress: '0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238',
+      // A path to a token logo image
+      logoURI: '/logos/usdc.png',
+      // The list of tokens this one is connected to
+      connections: [ { token: 'arbitrum|base|YOUR_ROUTER_ADDRESS_2' } ]
+    },
+    {
+      chainName: 'base',
+      standard: TokenStandard.EvmHypSynthetic,
+      decimals: 6,
+      symbol: 'USDC',
+      name: 'USD Coin',
+      addressOrDenom: 'YOUR_ROUTER_ADDRESS_2',
+      logoURI: '/logos/usdc.png',
+      connections: [ { token: 'arbitrum|base|YOUR_YOUR_ROUTER_ADDRESS_2' } ]
+    }
+  ]
 options: {}
